@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Статьи</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+  <div class="blog-info">
+    <img src="/blog.png" alt="Blog Logo">
+    <h1>Информационный</h1>
+  </div>
+  <nav>
+    <a th:href="@{/main}">Домой </a>
+    <a th:href="@{/}">Статьи</a>
+    <a th:href="@{/user_profile}">Профиль</a>
+  </nav>
+</header>
+
+<div class="notification">
+  У вас новые уведомления: Обновились последние записи в блоге
+</div>
+
+<main>
+  <div class="article">
+    <a th:href="@{/view_article}">
+      <img src="/article_pic.png" alt="Article Image">
+      <div class="article-details">
+        <div class="tags">Тэги: #технологии #новости</div>
+          <h2>Технологические тренды 2024: что ждет нас в будущем?</h2>
+        <p>В этой статье мы исследуем ключевые технологические тренды, которые будут определять 2024 год. Узнайте о...</p>
+        <div class="author">
+          <img src="/author_1.png" alt="Author 1">
+          <strong>Автор: Александра Гордеюк</strong>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="article">
+    <img src="/article_2.png" alt="Article Image">
+    <div class="article-details">
+      <div class="tags">Тэги: #технологии #лайфхаки</div>
+      <h2>10 технологических лайфхаков для повышения продуктивности</h2>
+      <p>В этой статье мы поделимся десятью простыми, но эффективными технологическими лайфхаками, которые помогут вам оптимизировать рабочий процесс и повысить продуктивность...</p>
+      <div class="author">
+        <img src="/author_2.png" alt="Author 2">
+        <strong>Автор: Иван Лесков</strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="article">
+    <img src="/article_3.png" alt="Article Image">
+    <div class="article-details">
+      <div class="tags">Тэги: #путешествия #технологии</div>
+      <h2>Технологии в путешествиях: как гаджеты меняют наш опыт</h2>
+      <p>В этой статье мы рассмотрим, как современные технологии трансформируют процесс путешествий, делая его более удобным и увлекательным...</p>
+      <div class="author">
+        <img src="/author_3.png" alt="Author 3">
+        <strong>Автор: Дмитрий Солдатов</strong>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="contact-info">
+    <p>Контакты: blog@gmail.com | Телефон: +375 (77) 777-77-77</p>
+    <p>Адрес: ул. Парниковая 3/1</p>
+  </div>
+</footer>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</body>
+</html>

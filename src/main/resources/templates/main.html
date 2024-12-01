@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Статьи</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+  <div class="blog-info">
+    <img src="/blog.png" alt="Blog Logo">
+    <h1>Информационный</h1>
+  </div>
+  <nav>
+    <a th:href="@{/main}">Домой </a>
+    <a th:href="@{/}">Статьи</a>
+    <a th:href="@{/user_profile}">Профиль</a>
+  </nav>
+</header>
+
+<div class="button-container">
+  <a th:href="@{/create_article}"><button>Создать статью</button></a>
+  <a th:href="@{/create_notification}"><button>Создать уведомление</button></a>
+  <a th:href="@{/edit_article}"><button>Управлять записью</button></a>
+</div>
+</body>
+</html>

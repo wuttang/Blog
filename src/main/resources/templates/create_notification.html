@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Добавление уведомления</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 100px);
+    }
+
+  </style>
+</head>
+<body>
+<header>
+  <div class="blog-info">
+    <img src="/blog.png" alt="Blog Logo">
+    <h1>Информационный</h1>
+  </div>
+  <nav>
+    <a th:href="@{/main}">Домой </a>
+    <a th:href="@{/}">Статьи</a>
+    <a th:href="@{/user_profile}">Профиль</a>
+  </nav>
+</header>
+
+<main>
+  <div class="notification-container">
+    <h2>Добавить уведомление</h2>
+    <input placeholder="Введите текст уведомления...">
+    <a th:href="@{/main}"><button>Опубликовать</button></a>
+  </div>
+</main>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</body>
+</html>

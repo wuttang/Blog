@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Технологические тренды 2024</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+    <div class="blog-info">
+        <img src="/blog.png" alt="Blog Logo">
+        <h1>Информационный</h1>
+    </div>
+    <nav>
+        <a th:href="@{/main}">Домой </a>
+        <a th:href="@{/}">Статьи</a>
+        <a th:href="@{/user_profile}">Профиль</a>
+    </nav>
+</header>
+
+<main>
+    <div class="article">
+        <div class="sidebar1">
+
+            <img src="/article_pic.png" alt="Image" class="post-image">
+        </div>
+        <div class="article-content">
+            <h1>Технологические тренды 2024: что ждет нас в будущем?</h1>
+            <p>В этой статье мы исследуем ключевые технологические тренды, которые будут определять 2024 год. Узнайте о новейших разработках в области искусственного интеллекта, блокчейна и интернета вещей, а также о том, как эти технологии влияют на бизнес и повседневную жизнь. Мы также обсудим значимые новости и события, которые могут изменить рынок технологий в ближайшие месяцы. Не пропустите шанс быть в курсе последних новостей и подготовиться к будущим изменениям!</p>
+            <div class="tags">
+                <strong>Тэги:</strong>
+                <span>#технологии</span>, <span>#новости</span>
+            </div>
+            <div class="button-container">
+                <a th:href="@{/edit_article}"><button class="edit-button">Изменить</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="comment-moderation">
+        <h2>Комментарии</h2>
+        <div class="comment">
+            <img src="/user_photo.png" alt="User" class="user-avatar">
+            <div class="comment-details">
+                <strong>Tom Easy</strong>
+                <p>Комментарий, который не оскорбляет блог.</p>
+                <div class="button-container">
+                    <a th:href="@{/login}"><button>Написать комментарий</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Информационный Блог. Все права защищены.</p>
+</footer>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</body>
+</html>

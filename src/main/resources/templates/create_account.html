@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Создание аккаунта</title>
+  <style>
+    body {
+      font-family: "Roboto", sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .signup-container {
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      width: 400px;
+    }
+
+    .signup-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .signup-container input {
+      width: 94.5%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .signup-container button {
+      background-color: #9370DB;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .signup-container button:hover {
+      background-color: #6a5acd;
+    }
+  </style>
+</head>
+<body>
+<div class="signup-container">
+  <h2>Создать аккаунт</h2>
+  <input type="text" placeholder="Имя пользователя" id="username">
+  <input type="email" placeholder="Почта" id="email">
+  <input type="password" placeholder="Ввести пароль" id="password">
+  <input type="password" placeholder="Подтвердить пароль" id="confirmPassword">
+  <a th:href="@{/user_profile}"><button>Зарегистрироваться</button></a>
+</div>
+</body>
+</html>

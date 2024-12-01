@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Профиль пользователя</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+  <div class="blog-info">
+    <img src="/blog.png" alt="Blog Logo">
+    <h1>Информационный</h1>
+  </div>
+  <nav>
+    <a th:href="@{/main}">Домой </a>
+    <a th:href="@{/}">Статьи</a>
+    <a th:href="@{/user_profile}">Профиль</a>
+  </nav>
+</header>
+
+<main>
+  <div class="sidebar">
+    <label for="profile-pic" style="font-weight: bold; margin-bottom: 5px; display: block;">Изменить фото</label>
+    <img src="/user_photo.png" alt="User Profile">
+    <input type="file" id="profile-pic" accept="image/*" style="margin-top: 10px;">
+  </div>
+  <div class="user-profile">
+    <div class="user-profile-fields">
+      <div>
+        <input type="text" id="name" placeholder="Изменить имя...">
+      </div>
+      <div>
+        <input type="email" id="email" placeholder="Изменить почту...">
+      </div>
+      <div>
+        <input type="password" id="password" placeholder="Изменить пароль...">
+      </div>
+    </div>
+    <div class="save-changes">
+      <a th:href="@{/}"><button>Сохранить изменения</button></a>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+</footer>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Редактирование поста</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+  <div class="blog-info">
+    <img src="/blog.png" alt="Blog Logo">
+    <h1>Информационный</h1>
+  </div>
+  <nav>
+    <a th:href="@{/main}">Домой </a>
+    <a th:href="@{/}">Статьи</a>
+    <a th:href="@{/user_profile}">Профиль</a>
+  </nav>
+</header>
+
+<main>
+  <div class="sidebar1">
+    <label for="profile-pic" style="font-weight: bold; display: block;">Изменить фото</label>
+    <img src="/article_pic.png" alt="Image" class="post-image">
+    <input type="file" id="profile-pic" style="margin-top: 10px;">
+    <div class="button-group">
+      <button>Изменить категории</button>
+      <button>Изменить теги</button>
+    </div>
+  </div>
+  <div class="content">
+    <div class="input-group">
+      <input type="text" id="title" placeholder="Изменить название...">
+    </div>
+    <div class="input-group1">
+      <input type="text" id="description" placeholder="Изменить описание...">
+    </div>
+    <div class="save-changes">
+      <a th:href="@{/}"><button>Сохранить изменения</button></a>
+    </div>
+
+    <div class="comment-moderation">
+      <h2>Модерация комментариев</h2>
+      <div class="comment">
+        <img src="/user_photo.png" alt="User" class="user-avatar">
+        <div class="comment-details">
+          <strong>Tom Easy</strong>
+          <p>Комментарий, который не оскорбляет блог.</p>
+          <div class="comment-actions">
+            <a th:href="@{/}"><button>Удалить</button></a>
+            <a th:href="@{/}"><button>Заблокировать</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+
+</footer>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</body>
+</html>
